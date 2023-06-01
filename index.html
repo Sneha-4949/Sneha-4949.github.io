@@ -1,136 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    
-<link href="index.css" rel="stylesheet" type="text/css"/>
-<script src="https://kit.fontawesome.com/2566684d3d.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/2566684d3d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div  id="header">
+  <div id="header">
     <div class="container">
       <nav>
-          <ul>
+        <ul>
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#project">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-         
-          </ul>
+
+        </ul>
       </nav>
+      <div class="headerContainer">
         <div class="headertext">
           <p>Software Engineer</p>
           <h1>Hi,I am <span>Sneha Dutta</span></h1>
+        </div>
+        <div class="headerImg">
+          <img src="images/sneha2.jpeg" width="100%" height="100%">
+        </div>
       </div>
     </div>
-    </div>
-    <!-- --------------------------About----------------------- -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-colo1">
-            <img src="images/my_pic.png">
+  </div>
+  <!-- --------------------------About----------------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-colo1">
+          <img src="images/sneha2.jpeg">
+        </div>
+        <div class="about-colo2">
+          <h1 class="about-title">About Me</h1>
+          <p class="about-me-desc">
+            I want to share and improve my knowledge in various fields of computer science.I'm quiet confident and
+            perpetually working on improving my chops on solving a problem at a time. Have a deep passion for learning
+            and a hardworking person.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience1')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
           </div>
-          <div class="about-colo2">
-            <h1 class="about-title">About Me</h1>
-            <p class="about-me-desc">
-              I want to share and improve my knowledge in various fields of computer science.I'm quiet confident and perpetually working on improving my chops on solving a problem at a time. Have a deep passion for learning and a hardworking person.
-            </p>
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-              <p class="tab-links" onclick="opentab('experience1')">Experience</p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>Languages</span><br>C,C++,Java,Python</li>
-                <li><span>Scripting</span><br>HTML,CSS,Javascript,ReactJS</li>
-                <li><span>Concepts</span><br>Data Structures and Algorithms,DBMS</li>
-                <li><span>Knowledge</span><br>Machine Learning,Salesforce</li>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Languages</span><br>C,C++,Java,Python</li>
+              <li><span>Scripting</span><br>HTML,CSS,Javascript,ReactJS</li>
+              <li><span>Concepts</span><br>Data Structures and Algorithms,DBMS</li>
+              <li><span>Knowledge</span><br>Machine Learning,Salesforce</li>
 
-              </ul>
-            </div>
-            <div class="tab-contents" id="experience1">
-              <ul>
-                <li><span>Dassault Systemes(Apr,2022-Present)</span><br>R&D Development Associate Engineer</li>
-                <li><span>Cognizant Technology Solutions(Aug,2021-March,2022)</span><br>Programmer Analyst Trainee</li>
-                <li><span>Sasken Technologies Limited(Aug,2020-Jan,2021)</span><br>Intern</li>
-                <li><span>SCII-Tumkur(May,2020-Aug,2020)</span><br>Machine Learning Intern</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience1">
+            <ul>
+              <li><span>Dassault Systemes(Apr,2022-Present)</span><br>R&D Development Associate Engineer</li>
+              <li><span>Cognizant Technology Solutions(Aug,2021-March,2022)</span><br>Programmer Analyst Trainee</li>
+              <li><span>Sasken Technologies Limited(Aug,2020-Jan,2021)</span><br>Intern</li>
+              <li><span>SCII-Tumkur(May,2020-Aug,2020)</span><br>Machine Learning Intern</li>
 
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>Computer Science and Engineering, B.E</span><br>Cambridge Insitute of Technology, Bengaluru</li>
-                <li><span>Higher Secondary (12th)</span><br>Siliguri Baradakanta Vidyapith, Siliguri</li>
-                <li><span>Secondary (10th)</span><br>New St.John's High School</li>
-              </ul>
-            </div>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Computer Science and Engineering, B.E</span><br>Cambridge Insitute of Technology, Bengaluru</li>
+              <li><span>Higher Secondary (12th)</span><br>Siliguri Baradakanta Vidyapith, Siliguri</li>
+              <li><span>Secondary (10th)</span><br>New St.John's High School</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <!-- --------------------------------------Experiences------------------------------------ -->
-    <div id="experience">
-      <div class="container">
-        <h1 class="experience-title">My Experience</h1>
-        <div class="experience-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2 style="font-style: italic">R&D Development Associate Engineer</h2>
-            <h2>Dassault Systemes</h2>
-            <h3>Apr,2022-Present</h3>
-            <p><span class="highlight">Learning:</span>WebUX Components, MQL, RDP, VSL.<br>Worked on 3DMerchandising Application and created a service. </p>
-          </div>
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2 style="font-style: italic">Programmer Analyst Trainee</h2>
-            <h2>Cognizant Technology Solutions</h2>
-            <h3>Aug,2021-March,2022</h3>
-            <p><span class="highlight">Learning:</span>Salesforce Platforms: sales Cloud and Service Cloud, LWC, VisualForce, Aura.<br>Created and maintained user profiles,workflows, dashboards on Salesforce. Added business logic to most system events using Apex.</p>
-             
-          </div>
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2 style="font-style: italic">Trainee</h2>
-            <h2>Sasken Technologies Limited</h2>
-            <h3>Aug,2020-Jan,2021</h3>
-            <p><span class="highlight">Learning:</span>FastAPI, WebSockets, Zeromq and Docker.<br>KenTest Framework- Backend and containers.</p>
-          </div>
+  </div>
+  <!-- --------------------------------------Experiences------------------------------------ -->
+  <div id="experience">
+    <div class="container">
+      <h1 class="experience-title">My Experience</h1>
+      <div class="experience-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2 style="font-style: italic">R&D Development Associate Engineer</h2>
+          <h2>Dassault Systemes</h2>
+          <h3>Apr,2022-Present</h3>
+          <p><span class="highlight">Learning:</span>WebUX Components, MQL, RDP, VSL.<br>Worked on 3DMerchandising
+            Application and created a service. </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2 style="font-style: italic">Programmer Analyst Trainee</h2>
+          <h2>Cognizant Technology Solutions</h2>
+          <h3>Aug,2021-March,2022</h3>
+          <p><span class="highlight">Learning:</span>Salesforce Platforms: sales Cloud and Service Cloud, LWC,
+            VisualForce, Aura.<br>Created and maintained user profiles,workflows, dashboards on Salesforce. Added
+            business logic to most system events using Apex.</p>
+
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2 style="font-style: italic">Trainee</h2>
+          <h2>Sasken Technologies Limited</h2>
+          <h3>Aug,2020-Jan,2021</h3>
+          <p><span class="highlight">Learning:</span>FastAPI, WebSockets, Zeromq and Docker.<br>KenTest Framework-
+            Backend and containers.</p>
         </div>
       </div>
-
     </div>
-    <!-- ------------------------Projects----------------------------- -->
-    <div id="project">
-      <div class="container">
-        <h1 class="project-title">My Projects</h1>
-        <div class="project-list">
-          <div class="project">
-            <img src="images/LMS.jpg">
-            <div class="desc">
-              <h3 style="margin-bottom: 20px;">Library Management System</h3>
-              <p>Technologies Used: React Js, GoLang, MongoDB.<br>The aim of this project is to make an application for assisting a librarian in managing a book library in a university.</p>
-            </div>
+
+  </div>
+  <!-- ------------------------Projects----------------------------- -->
+  <div id="project">
+    <div class="container">
+      <h1 class="project-title">My Projects</h1>
+      <div class="project-list">
+        <div class="project">
+          <img src="images/LMS.jpg">
+          <div class="desc">
+            <h3 style="margin-bottom: 20px;">Library Management System</h3>
+            <p>Technologies Used: React Js, GoLang, MongoDB.<br>The aim of this project is to make an application for
+              assisting a librarian in managing a book library in a university.</p>
           </div>
-          <div class="project">
-            <img src="images/work-1.png">
-            <div class="desc">
-              <h3 style="margin-bottom: 20px;">Smartphone Arena</h3>
-              <p>Technologies Used:PHP,Html,Css,PhpMyAdmin.<br>An organized and systematic way of storing all the specifications of a smartphone that helps the different kind of users to filter out their choices according to their requirements.</p>
-            </div>
+        </div>
+        <div class="project">
+          <img src="images/work-1.png">
+          <div class="desc">
+            <h3 style="margin-bottom: 20px;">Smartphone Arena</h3>
+            <p>Technologies Used:PHP,Html,Css,PhpMyAdmin.<br>An organized and systematic way of storing all the
+              specifications of a smartphone that helps the different kind of users to filter out their choices
+              according to their requirements.</p>
           </div>
-          <div class="project">
-            <img src="images/attendance.jpg">
-            <div class="desc">
+        </div>
+        <div class="project">
+          <img src="images/attendance.jpg">
+          <div class="desc">
             <h3 style="margin-bottom: 20px;">RFID Attendance System</h3>
-              <p>Technologies Used:Arduino UNO,PHP,RFID.<br>The aim of this project is to implement a professional attendance system that can be used in institutions and offices. The system can uniquely identify each person based on their RFID card.</p>
+            <p>Technologies Used:Arduino UNO,PHP,RFID.<br>The aim of this project is to implement a professional
+              attendance system that can be used in institutions and offices. The system can uniquely identify each
+              person based on their RFID card.</p>
           </div>
-          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -160,6 +178,7 @@
 
     </div>
   </div>
-    <script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
+
 </html>
