@@ -17,10 +17,10 @@ body
 #header
 {
   width:100%;
-  height:100vh;
-  background-image: url(images/mypicture.png); 
+  height:90vh;
+  /* background-image: url(images/mypicture.png); 
   background-size: cover;
-  background-position: right;
+  background-position: right; */
 }
  .container
 {
@@ -58,10 +58,16 @@ nav ul li a:hover::after
 {
     width:100%;
 }
+
+.headerContainer{
+  display: flex;
+  align-items: center;
+  height:90vh;
+}
 .headertext
 {
-  margin-left: 10%;
-  margin-top:20%;
+  /* margin-left: 10%; */
+  /* margin-top:20%; */
   font-size: 30px;
 }
 .headertext h1{
@@ -70,11 +76,29 @@ nav ul li a:hover::after
 .headertext h1 span{
   color:rgb(27, 93, 159);
 }
+.headerImg{
+  height:70%;
+  display: flex;
+  margin:auto;
+  margin-right: -1%;
+}
+
+.headerImg img{
+  border-radius: 50%;
+  /* opacity: 0.8; */
+  cursor: pointer;
+}
+.headerImg img:hover{
+  opacity: 0.7;
+}
 /* -------------------------About------------------------ */
 #about
 {
   padding: 80px 0px;
   color: #ababab;
+  height: 90vh;
+  display: flex;
+  align-items: center;
 }
 .row
 {
@@ -88,7 +112,7 @@ nav ul li a:hover::after
 }
 .about-colo1 img{
   width:100%;
-  height:70%;
+  height:90%;
   border-radius: 15px;
   margin-left: 15px;
   object-fit: cover;
@@ -155,7 +179,9 @@ nav ul li a:hover::after
 #experience
 {
   padding:0 30px ;
-  
+  height: 96vh;
+  display: flex;
+  align-items: center;
 }
 .experience-title
 {
