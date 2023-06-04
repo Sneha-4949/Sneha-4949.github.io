@@ -15,14 +15,16 @@
   <div id="header">
     <div class="container">
       <nav>
-        <ul>
+        <ul id="sidemenu">
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#project">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
 
         </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="headerContainer">
         <div class="headertext">
@@ -93,15 +95,15 @@
           <h2 style="font-style: italic">R&D Development Associate Engineer</h2>
           <h2>Dassault Systemes</h2>
           <h3>Apr,2022-Present</h3>
-          <p><span class="highlight">Learning:</span>WebUX Components, MQL, RDP, VSL.<br>Worked on 3DMerchandising
-            Application and created a service. </p>
+          <p><span class="highlight">Learning:</span> Javascript, WebUX Components, MQL, RDP, VSL.<br>Worked on a merchandising application 
+            where I had the opportunity to contribute from front-end to back-end development and currently working on developing a client-side service for our clients.</p>
         </div>
         <div>
           <i class="fa-solid fa-code"></i>
           <h2 style="font-style: italic">Programmer Analyst Trainee</h2>
           <h2>Cognizant Technology Solutions</h2>
           <h3>Aug,2021-March,2022</h3>
-          <p><span class="highlight">Learning:</span>Salesforce Platforms: sales Cloud and Service Cloud, LWC,
+          <p><span class="highlight">Learning:</span> Salesforce Platforms: sales Cloud and Service Cloud, LWC,
             VisualForce, Aura.<br>Created and maintained user profiles,workflows, dashboards on Salesforce. Added
             business logic to most system events using Apex.</p>
 
@@ -111,7 +113,7 @@
           <h2 style="font-style: italic">Trainee</h2>
           <h2>Sasken Technologies Limited</h2>
           <h3>Aug,2020-Jan,2021</h3>
-          <p><span class="highlight">Learning:</span>FastAPI, WebSockets, Zeromq and Docker.<br>KenTest Framework-
+          <p><span class="highlight">Learning:</span> FastAPI, WebSockets, Zeromq and Docker.<br>KenTest Framework-
             Backend and containers.</p>
         </div>
       </div>
@@ -164,15 +166,16 @@
             <a href="https://www.instagram.com/snehadutta1999/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/sneha-duttano1/"><i class="fa-brands fa-linkedin"></i></a>
           </div>
-          <a href="" class="btn btn2">Download CV</a>
+          <a href="Sneha_Dutta_Resume.pdf" class="btn btn2">View CV</a>
         </div>
         <div class="contact-right">
-          <form>
+          <form name="submit-to-google-sheet">
             <input type="text" name="Name" placeholder="Your Name" required>
             <input type="email" name="Email" placeholder="Your Email" required>
-            <textarea name="message" rows="6" placeholder="Your Messsage"></textarea>
+            <textarea name="Message" rows="6" placeholder="Your Messsage"></textarea>
             <button type="submit" class="btn btn2">Submit</button>
           </form>
+          <span id="msg"></span>
         </div>
       </div>
 

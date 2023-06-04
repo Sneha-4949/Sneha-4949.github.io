@@ -355,4 +355,49 @@ form .btn2 {
   margin-top: 20px;
   cursor: pointer;
 }
-/* -------------------css for small queries------------------ */
+/* -------------------css for small screens------------------ */
+nav .fa-solid
+{
+  display:none;
+}
+@media only screen and (max-width:600px)
+{
+  .headertext{
+    margin-top: 100%;
+    font-size: 16px;
+  }
+  .headertext h1 {
+    font-size: 30px;
+  }
+  nav .fa-solid
+{
+  display:block;
+  font-size: 25px;
+  margin-left: 25px;
+}
+nav ul { 
+  background:rgb(27, 93, 159);
+  position:fixed; 
+   top:0;
+   /* right:-200px; */
+   width:200px;
+  height:90vh;
+  padding-top: 50px;  
+}
+nav ul li {
+  display:block;
+  margin:25px;
+} 
+nav ul .fa-solid
+{
+  position: absolute;
+  top:25px;
+  left:25px;
+  cursor:pointer;
+}
+}
+#msg {
+  color:#61b752;
+  margin-top: -40px;
+  display:block;
+}
